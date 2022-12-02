@@ -1,4 +1,4 @@
-<?php
+?php
 
 namespace Model;
 
@@ -13,7 +13,7 @@ return $this->age >= 18;
 }
 
 public function testIsAnAdultReturnsTrueForPeopleOrderThanTreshold(){
-    new User(19);
+    new User(15);
     $this->assertTrue($user->isAnAdult());
     
     $user = new User(55);
